@@ -1,0 +1,112 @@
+.home-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: aliceblue;
+    padding: 10% 5%;
+    padding-bottom: 5%;
+  }
+  
+  .leftside {
+    flex: 1;
+    padding-right: 5%;
+  }
+  
+  .rightside 
+  {
+    text-align: center;
+  }
+  
+  .leftside h1 {
+    font-size: 220%;
+    margin-bottom: 0.5rem;
+  }
+  .leftside h3 {
+    font-size: 200%;
+    margin-top: 0.5rem;
+  }
+  
+  .leftside p {
+    font-size: 110%;
+    line-height: 2;
+    margin-bottom: 1.5rem;
+    max-width: 75%;
+  }
+  
+  .leftside a {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background-color: #fff;
+    color: #000;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .leftside a:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .Typewriter__wrapper {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .Typewriter__cursor {
+    font-size: 2rem;
+    animation: blink 1s infinite;
+  }
+  
+  @keyframes blink {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .rightside img {
+    max-width: 50%;
+    max-height: 50%;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .home-container {
+      flex-direction: column-reverse;
+      padding: 5% 2%;
+    }
+  
+    .leftside {
+      padding-right: 0;
+      margin-top: 2rem;
+    }
+  
+    .leftside h1 {
+      font-size: 2rem;
+    }
+  
+    .leftside h3 {
+      font-size: 1.5rem;
+    }
+  
+    .leftside p {
+      font-size: 1rem;
+    }
+  
+    .Typewriter__wrapper {
+      font-size: 1.2rem;
+    }
+  
+    .Typewriter__cursor {
+      font-size: 1.5rem;
+    }
+  
+    .rightside img {
+      max-width: 60%;
+    }
+  }

@@ -1,0 +1,43 @@
+.projects-container {
+    text-align: center;
+    padding: 40px;
+    color: #fff;
+  }
+  
+  .carousel {
+    display: flex;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    margin-top: 20px;
+  }
+  
+  .project-card {
+    flex: 0 0 300px;
+    margin-right: 20px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    scroll-snap-align: start;
+  }
+  
+  .skills-used ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px;
+  }
+  
+  .skills-used li {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 5px 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .project-card {
+      flex: 0 0 250px;
+    }
+  }
