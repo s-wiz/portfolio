@@ -24,6 +24,7 @@
   .leftside h3 {
     font-size: 200%;
     margin-top: 0.5rem;
+    color: rgb(178, 32, 200);
   }
   
   .leftside p {
@@ -73,12 +74,13 @@
   .rightside img {
     max-width: 50%;
     max-height: 50%;
+    border-radius: 50%;
   }
   
   @media screen and (max-width: 768px) {
     .home-container {
       flex-direction: column-reverse;
-      padding: 5% 2%;
+      padding: 5% 5%;
     }
   
     .leftside {
@@ -108,5 +110,7 @@
   
     .rightside img {
       max-width: 60%;
+      max-height: 60%;
+      border-radius: 50%;
     }
   }

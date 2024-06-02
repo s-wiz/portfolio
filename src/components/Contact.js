@@ -3,7 +3,8 @@ import './styles/Contact.css';
 
 const Contact = () => {
   return (
-    <div className="contact-container">
+    <section id='contact'>
+        <div className="contact-container">
       <h2>Contact Me</h2>
       <form>
         <div className="form-group">
@@ -21,6 +22,7 @@ const Contact = () => {
         <button type="submit">Send</button>
       </form>
     </div>
+    </section>
   );
 };
 

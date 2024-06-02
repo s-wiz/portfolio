@@ -4,64 +4,49 @@ import './styles/Projects.css';
 const Projects = () => {
   const projects = [
     {
-      title: 'Project 1',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-      skills: ['React', 'Node.js', 'MongoDB'],
+      title: 'Attendance app',
+      description: 'I was one of the contributor to attendance app made by Product Team @ SST',
+      skills: ['Django', 'REST Framework'],
     },
     {
-        title: 'Project 1',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-        skills: ['React', 'Node.js', 'MongoDB'],
-      },
-      {
-        title: 'Project 1',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-        skills: ['React', 'Node.js', 'MongoDB'],
-      },
-      {
-        title: 'Project 1',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-        skills: ['React', 'Node.js', 'MongoDB'],
-      },
-      {
-        title: 'Project 1',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-        skills: ['React', 'Node.js', 'MongoDB'],
-      },
-
-    {
-      title: 'Project 2',
-      description: 'Praesent consectetur orci sed ante tincidunt, vitae aliquam elit mollis.',
-      skills: ['Angular', 'Express.js', 'PostgreSQL'],
+      title: 'Aerofit and Yulu Data Analysis',
+      description: 'As a part of project assignment I have done the project',
+      skills: ['Jupyter','Pandas', 'Numpy'],
     },
     {
-      title: 'Project 3',
-      description: 'Fusce id velit id velit malesuada malesuada.',
-      skills: ['Vue.js', 'Django', 'MySQL'],
+      title: 'Web scrapper',
+      description: 'Built a web scrapper to scrape the data from flipkart and amazon',
+      skills: ['Python', 'Beautiful Soup'],
     },
-
+    {
+      title: 'Travel Agency Backend',
+      description: 'Built the travel agency backend with my teammates as a part of assignment',
+      skills: [ 'Java', 'SpringBoot'],
+    },
   ];
 
   return (
-    <div className="projects-container">
-      <h2>Projects</h2>
-      <div className="carousel">
-        {projects.map((project, index) => (
-          <div key={index} className="project-card">
-            <h3>{project.title}</h3>
-            <p>{project.description}</p>
-            <div className="skills-used">
-              <h4>Skills Used:</h4>
-              <ul>
-                {project.skills.map((skill, skillIndex) => (
-                  <li key={skillIndex}>{skill}</li>
-                ))}
-              </ul>
+    <section id="projects">
+      <div className="projects-container">
+        <h2>My Projects</h2>
+        <p>Explore a selection of my recent work.</p>
+        <div className="project-grid">
+          {projects.map((project, index) => (
+            <div key={index} className="project-card">
+              <h3>{project.title}</h3>
+              <p>{project.description}</p>
+              <div className="skills-used">
+                <ul>
+                  {project.skills.map((skill, skillIndex) => (
+                    <li key={skillIndex}>{skill}</li>
+                  ))}
+                </ul>
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 

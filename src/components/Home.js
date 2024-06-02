@@ -1,10 +1,11 @@
 import React from 'react';
 import Typewriter from 'typewriter-effect';
 import './styles/Home.css';
-import image from './styles/assests/logo512.png';
+import image from './styles/assests/logo.jpeg';
 function Home() {
   return (
-    <div className="home-container">
+    <section id='home'>
+      <div className="home-container">
       <div className="leftside">
         <h1>Hey, Samrudh here</h1>
         <h3>
@@ -22,14 +23,15 @@ function Home() {
             }}
           />
         </h3>
-        <p> I am a first-grader at Scaler School of Technology. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta nostrum voluptates natus voluptate doloribus expedita perspiciatis fugiat quos sapiente cum, sunt voluptatum rem. Obcaecati rerum quibusdam maiores voluptate vel! Illum. </p>
-        <a href="https://www.google.com">Connect with me</a>
+        <p> Hello! I am Samrudh, a first-year bachelor's student with a passion for cybersecurity and aspirations of becoming a software engineer. I have experience in Django and front-end web development. Additionally, I am actively learning Data Structures and Algorithms (DSA). </p>
+        <a href="https://www.linkedin.com/in/sam-wiz/">Connect with me</a>
       </div>
 
       <div className="rightside">
         <img src={image} alt="image"/>
       </div>
     </div>
+    </section>
   );
 }
 

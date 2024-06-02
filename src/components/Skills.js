@@ -1,7 +1,8 @@
 import './styles/Skills.css'
 function Skills() {
     return (
-      <div className="skills-container">
+      <section id='skills'>
+        <div className="skills-container">
         <h2>My Skills</h2>
         <p>
         I am actively learning and in process of acquiring more and more....
@@ -10,7 +11,7 @@ function Skills() {
           <div className="skills-column">
             <h4>Programming Languages</h4>
             <div className="skill-item">
-              <span>JavaScript</span>
+              <span>Java</span>
               <div className="skill-stars">
                 <span className="star">&#9733;</span>
                 <span className="star">&#9733;</span>
@@ -30,7 +31,7 @@ function Skills() {
               </div>
             </div>
             <div className="skill-item">
-              <span>Rust</span>
+              <span>Javascript</span>
               <div className="skill-stars">
                 <span className="star">&#9733;</span>
                 <span className="star">&#9733;</span>
@@ -48,12 +49,12 @@ function Skills() {
                 <span className="star">&#9733;</span>
                 <span className="star">&#9733;</span>
                 <span className="star">&#9733;</span>
-                <span className="star">&#9733;</span>
-                <span className="star">&#9733;</span>
+                <span className="star">&#9734;</span>
+                <span className="star">&#9734;</span>
               </div>
             </div>
             <div className="skill-item">
-              <span>Vue.js</span>
+              <span>Django</span>
               <div className="skill-stars">
                 <span className="star">&#9733;</span>
                 <span className="star">&#9733;</span>
@@ -68,8 +69,8 @@ function Skills() {
                 <span className="star">&#9733;</span>
                 <span className="star">&#9733;</span>
                 <span className="star">&#9733;</span>
-                <span className="star">&#9733;</span>
-                <span className="star">&#9733;</span>
+                <span className="star">&#9734;</span>
+                <span className="star">&#9734;</span>
               </div>
             </div>
           </div>
@@ -108,6 +109,7 @@ function Skills() {
           </div>
         </div>
       </div>
+      </section>
     );
   }
   
